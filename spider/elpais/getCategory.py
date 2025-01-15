@@ -52,7 +52,7 @@ def process_csv_files(folder_path):
 
 
 def main():
-    folder_path = 'data'  # 设置你的CSV文件夹路径
+    folder_path = 'data1'  # 设置你的CSV文件夹路径
     category_counter = process_csv_files(folder_path)
 
     # 打印统计结果

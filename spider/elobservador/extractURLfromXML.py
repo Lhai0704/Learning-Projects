@@ -1,3 +1,5 @@
+# 从已经下载好的sitemap文件夹中查找url中含有关键词的url，输出csv文件，第一列为url，第二列为date
+
 import os
 import csv
 import xml.etree.ElementTree as ET
@@ -51,6 +53,6 @@ def extract_info_from_xml(folder_path, keywords):
 
 # 使用示例
 folder_path = "sitemaps"  # 替换为实际的文件夹路径
-# keywords = ["china", "beijing", "chinas", "chino", "chinos", "hongkong", "macao", "shanghai"]  # 替换为实际的关键词列表
-keywords = ["hong-kong"]
+# keywords = ["china", "beijing", "chinas", "chino", "chinos", "hongkong", "macao", "shanghai", "hong-kong", "pekin"]  # 替换为实际的关键词列表
+keywords = ["taiwan"]
 extract_info_from_xml(folder_path, keywords)

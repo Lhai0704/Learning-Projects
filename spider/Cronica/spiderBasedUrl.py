@@ -7,6 +7,17 @@ from datetime import datetime
 import random
 
 def scrape_data(input_csv, output_csv):
+    header = {
+        'User-Agent': random.choice([
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36',
+            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        ])
+    }
+
+    # 使用Session保持会话
+    session = requests.Session()
 
     # 读取原始CSV文件
     with open(input_csv, 'r', encoding='utf-8') as infile:
@@ -21,7 +32,7 @@ def scrape_data(input_csv, output_csv):
     for row in rows:
         url = row[1]  # 第二列是URL
         try:
-            response = requests.get(url, timeout=30)
+            response = session.get(url, headers=header, timeout=10)
             response.raise_for_status()
             soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -54,6 +65,6 @@ def scrape_data(input_csv, output_csv):
         writer.writerows(rows)
 
 # 示例调用
-input_csv_file = 'Cronica_Upper_China_processed_url.csv'  # 输入的CSV文件
-output_csv_file = 'Cronica_Upper_China_data.csv'  # 输出的CSV文件
+input_csv_file = 'Cronica_taiwan.csv'  # 输入的CSV文件
+output_csv_file = 'Cronica_taiwan_content'  # 输出的CSV文件
 scrape_data(input_csv_file, output_csv_file)

@@ -15,7 +15,7 @@ headers = {
 
 cookies = {
     # 'cookie_name': 'cookie_value'  # 根据实际情况填入cookie
-    'cf_clearance': 'r310ymE0OHePzdPDfasuNpSlWwLt6_sD2Q.Sa1C0AUo-1734566367-1.2.1.1-nILkbCmkbpv6NOtZsEdZZuAL.TxXSylbWR3hkAInGL18uJDyaH3le39bXcwOiqJeHYFHI4t53yqBgZw3ZJnisWFYGwneFAoQoIo5s2cqZrMGJp89Sjp4SovJk3Yo.MHl6GtdBuIffzn4UR7JM8PmYD6qEAXh2iHvopjPJavBACtDVYRl5mj8w.9qxft5wLFOSY2n.E96DY6Zm3UrOvpTLuJ55x98KWfJiHQ534uc61mslW9AAnizhF555yZQKKxm8h4l3z0D4BhntKjgS09npUJcy6L8rcWtze10muofcfpFKMb28h0ts83PAYqY9k76DTUCmLc68SNbPYs96TIRKTJkvJ6VP3QKK2wdtYY1WvsGnWFDUFl5FYdc6rBfI3Y4__5fLYRgCLJAH6BaHg_qRPpoGd6sk4BmfVb4GG7Q3A5.oZjPs8pw0CONjlbptOrK',
+    'cf_clearance': 'YCX_xqoLnkAGVkeHKmLopu6ILLurVlhUPTvVUeqCwj0-1736429821-1.2.1.1-WRcElJf8mN3Jew039KAcAgFoqhDJh_k3wkTtZowEqt1iu5ivvR2htYNjUnIw6Jcts5r3rTy73cbSCZH.k.RVflqCMG2sDhBNlq3mh7RBfbCK5kiVO3AR5kLVVOPzVJO1na6ivSwOUOAZkV9L6xnaKcuUfUqOubngLe5ipZtIeFjr47.dNDzX8H38GY1UPvv69gj1h6vsi6mRJytdyA6Gyhb8sYvjZ__rxYkc5gBZbn8h3KZlPPWb45IVT76zHpZlq40C3hACHHZx.FpLeUDLEKIMrN4_KOGFTKBk3pWrICiB15lQ6es3edN2s4VL5Ct21L9IolS3F.AHsXdYBH.h_5ZzkWWPaTzGOSzEb9vZwmJzPq0RGTwBC_obPLs2XCzWm6L8KvuW3nZ8bvsELwlnwoS4ikKt8F3VIPv0aDWHh4HVyN3LnCYYKK249Op1q26i',
 }
 
 
@@ -80,7 +80,7 @@ def update_csv(file_name, header, rows, updated_data):
 
 # 主程序
 def main():
-    file_name = 'china_Errors.csv'  # 替换为你的CSV文件名
+    file_name = 'filtered_taiwan.csv'  # 替换为你的CSV文件名
     header, rows = read_csv(file_name)
 
     updated_data = []  # 用于存储更新后的数据

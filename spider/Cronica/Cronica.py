@@ -1,3 +1,5 @@
+# 给定关键词和页数，输出csv文件，第一列为title，第二列为url
+
 import requests
 from bs4 import BeautifulSoup
 import csv
@@ -6,7 +8,7 @@ import time
 
 # 定义爬取函数
 def crawl_china_news(page):
-    url = f'https://www.cronicas.com.uy/page/{page}/?s=chinos'
+    url = f'https://www.cronicas.com.uy/page/{page}/?s=taiwan'
     headers = {
         'User-Agent': random.choice([
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
@@ -61,9 +63,9 @@ def save_to_csv(data, filename):
 
 # 主函数
 if __name__ == "__main__":
-    filename = 'Cronica_chinos.csv'
+    filename = 'Cronica_taiwan.csv'
 
-    for page in range(1, 8):  # 循环爬取
+    for page in range(1, 5):  # 循环爬取
         print(f"Crawling page {page}...")
         news = crawl_china_news(page)
         save_to_csv(news, filename)

@@ -30,8 +30,8 @@ def extract_empty_content_rows(original_file, empty_content_file):
 
 # 主程序
 def main():
-    original_file = 'data/filtered_china.csv'  # 原始CSV文件路径
-    empty_content_file = 'empty_content_rows.csv'  # 保存content列为空的行的CSV文件路径
+    original_file = 'filtered_taiwan.csv'  # 原始CSV文件路径
+    empty_content_file = 'empty_content_rows_taiwan.csv'  # 保存content列为空的行的CSV文件路径
 
     extract_empty_content_rows(original_file, empty_content_file)
 

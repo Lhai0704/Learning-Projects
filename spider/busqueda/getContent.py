@@ -21,7 +21,7 @@ class WebScraper:
         }
 
         self.cookies: Dict[str, str] = {
-            'cf_clearance': 'gNvgHd58k2sdPr2RmAnb70lJhLw0zDLB2y39nzUfYwM-1734674230-1.2.1.1-ZW0zES9Wh1gssanAIJUkSNr.ZfUEfRt_hg5oldm25q2tKHBbYynfCa.z0m092OyS7yE747MeSFnGU9qzLxY1H2FPAqcxCTpZY0hQLMZqceV2yCl_zCWG3mLT0ENQQFbDIOPm02wwdA2ZDPf10jaZ_xrwV7UbP_ihxLTXARNYJKIb.TmZOOvGseXM1uCBayZxCfwtGPi57iwDmvQnPg1oM6EUzaugaz5WvDbnlhFOxTreMFHOS5yroXH7y0AR4_GO85ziSZpBJJmhU2zmfiBJYolcJAImEZR9p64CP4GR2d3WMMatnCPtroAD.YYq6Ql72.MRLFIPpwbLbYe5H4SX7_XoCwcBYsDJFVvt.6ZY115KqDHqfsaN.bzDg17XJ4hhXsZx5Dn9TBx8nkO4kAUIr8eA0QHBFWA.TYq0kRF4Hc3oU9sLOosP.JKWaQFx3c1p',
+            'cf_clearance': 'xmoaQIm_6v9PXsfQg9Rcl0ysq34uEMxEHktcisi2ppo-1736429428-1.2.1.1-KqF1T5vHTd63etLOZgsW148BeIVxXaZu8XOutq788QRO6wirp5LpCrhagZFCdHbCWecdsiyceX13XzvYw0k2cgZCiikvTWh_q.jNI3Eyq8lZLvZpZTxoaJ8zExJPd5O.guAOhHg61lea1dl.Wuxd8t73YFxxHFzMe0FlAeB01Pclt_GEQg2jBFr0mqBhTI9um9maGXG2w5T1RNNVpevVTgsThRkF2K4Sqy8l9y9w6IPxh4cOcb_mX6eh_J_v5Wq1FF4qIlkGg5IXaQqIQh40NClZHimAZvAP0MvoXYuJKDfnBsGxbc1gUymlI9FK9lBfY2yUUTL1sRdJUZop_vcWeJ466qus32NmGVJfF.qGOKeXFn1_5Vm1GIULrgoRloqTu6ogAViy0vMY6o7JNr0lAwk7mqYp5Wu2ecUmaZs7gZ7Zne9xms5yx52_TMhUTBsg',
         }
 
         logging.basicConfig(
@@ -237,7 +237,7 @@ def main():
     #     print("获取内容失败")
 
     # 如果要处理CSV文件，取消下面的注释
-    scraper.process_csv('data/url+time/china.csv', 'data/china_data.csv')
+    scraper.process_csv('taiwan.csv', 'taiwan-data.csv')
 
 
 if __name__ == "__main__":

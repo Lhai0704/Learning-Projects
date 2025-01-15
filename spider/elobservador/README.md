@@ -1,0 +1,4 @@
+第一步下载sitemap文件
+第二步运行extractURLfromXML.py从sitemap中提取url中包含关键词的url和日期
+第三步运行getContent.py获取正文和分类数据。
+第四步运行util中的。。。py调整数据格式

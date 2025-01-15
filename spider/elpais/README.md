@@ -1,0 +1,3 @@
+先下载sitemap文件，从中提取url和time
+getContent然后extractERROR提取有问题的行
+然后getCategory获取类别

@@ -100,5 +100,5 @@ def process_csv_normal(input_file, output_file):
     return df
 
 
-processed_df = process_csv('data/filtered_shanghai.csv', 'data/elpais_data/elpais_shanghai.csv')
+processed_df = process_csv('filtered_taiwan.csv', 'taiwan-data.csv')
 

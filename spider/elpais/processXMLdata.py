@@ -1,3 +1,5 @@
+# 给定关键词，输出csv，第一列url，第二列time
+
 import pandas as pd
 
 def filter_and_deduplicate(csv_file, keyword, output_file):
@@ -16,7 +18,7 @@ def filter_and_deduplicate(csv_file, keyword, output_file):
 
 # 使用示例
 csv_file = 'XML_data.csv'  # 输入文件路径
-keyword = 'beijing'  # 你要查找的关键字
-output_file = 'filtered_beijing.csv'  # 输出文件路径
+keyword = 'taiwan'  # 你要查找的关键字
+output_file = 'filtered_taiwan.csv'  # 输出文件路径
 
 filter_and_deduplicate(csv_file, keyword, output_file)

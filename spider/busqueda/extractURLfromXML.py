@@ -51,5 +51,6 @@ def extract_info_from_xml(folder_path, keywords):
 
 # 使用示例
 folder_path = "sitemaps"  # 替换为实际的文件夹路径
-keywords = ["china", "beijing", "chinas", "chino", "chinos", "hong-kong", "macao", "shanghai"]  # 替换为实际的关键词列表
+# keywords = ["china", "beijing", "chinas", "chino", "chinos", "hong-kong", "macao", "shanghai"]  # 替换为实际的关键词列表
+keywords = ["pekin", "taiwan"]
 extract_info_from_xml(folder_path, keywords)
